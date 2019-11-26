@@ -21,7 +21,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #0f594d;
-  background-color: #f2e6cd;
+  background-color: #000;
 }
 @media only screen and (min-width: 1048px) {
   body {
@@ -44,26 +44,34 @@ Main Components
   position: relative;
   height: 100%;
   background-color: #93a748;
+    background: linear-gradient(127deg, rgba(221,39,90,0.48), rgba(12,85,185,0.48), rgba(221,39,90,0.48));
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cd-header > img{
+  width: 100px;
+  margin-bottom: 30px;
 }
 .cd-header h1 {
-  width: 90%;
   color: #f2e6cd;
   text-align: center;
   font-size: 2.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  margin-bottom: 10px;
+}
+.cd-header > p{
+  color: #f2e6cd;
+  text-align: center;
+  font-size: 1.9rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+  margin-top: 5px;
 }
 @media only screen and (min-width: 768px) {
   .cd-header h1 {
@@ -88,10 +96,23 @@ Main Components
   font-size: 2.4rem;
   margin-bottom: 1em;
 }
+.cd-fixed-background h2 > img{
+  vertical-align: middle;
+  width: 90px;
+  margin-right: 20px;
+}
 .cd-fixed-background p {
   line-height: 1.6;
-  font-family: "Merriweather", serif;
 }
+.cd-fixed-background > .cd-content > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.cd-fixed-background > .cd-content > div > a > img{
+  width: 170px;
+}  
 .cd-fixed-background .light-background h2, .cd-fixed-background .light-background p {
   color: #0f594d;
 }
@@ -104,14 +125,14 @@ Main Components
   margin: 2em auto 0;
 }
 .cd-fixed-background.img-1 {
-  background-color: #bf5138;
+  background-color: #2e51a2;
 }
 .cd-fixed-background.img-1 .cd-content::after {
   background: url("../img/img-mobile-1.jpg") no-repeat;
   background-size: 100% auto;
 }
 .cd-fixed-background.img-2 {
-  background-color: #f2e6cd;
+  background-color: #db1d3f;
 }
 .cd-fixed-background.img-2 .cd-content::after {
   background: url("../img/img-mobile-2.jpg") no-repeat;
@@ -185,15 +206,13 @@ Main Components
 .cd-vertical-nav {
   position: fixed;
   z-index: 2;
-  right: 3%;
-  top: 50%;
-  bottom: auto;
+  bottom: 3%;
+  left: calc(50% - 20px);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  display: none;
 }
 .cd-vertical-nav a {
   display: block;
