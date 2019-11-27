@@ -73,6 +73,22 @@ Main Components
     font-weight: 300;
   margin-top: 5px;
 }
+.cd-header > div{
+  margin-top: 30px;
+}
+.cd-header > div > a{
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 14pt;
+  padding: 10px 20px;
+  margin: 5px;
+  transition: all .3s;
+  display: inline-block;
+}
+.cd-header > div > a:hover{
+  background: #fff;
+  color: rgba(12,85,185);
+}
 @media only screen and (min-width: 768px) {
   .cd-header h1 {
     font-size: 3.6rem;
@@ -139,17 +155,16 @@ Main Components
   background-size: 100% auto;
 }
 .cd-fixed-background.img-3 {
-  background-color: #0f594d;
+  background: linear-gradient( 90deg, rgb(154,0,255) 0%, rgb(247,0,255) 100%);
 }
 .cd-fixed-background.img-3 .cd-content::after {
-  background: url("../img/img-mobile-3.jpg") no-repeat;
+  background: url("../img/img-mobile-3.png") no-repeat;
   background-size: 100% auto;
 }
 .cd-fixed-background.img-4 {
   background-color: #db9537;
 }
 .cd-fixed-background.img-4 .cd-content::after {
-  background: url("../img/img-mobile-4.jpg") no-repeat;
   background-size: 100% auto;
 }
 @media only screen and (min-width: 768px) {
@@ -250,4 +265,28 @@ Main Components
 
 .no-js .cd-vertical-nav {
   display: none;
+}
+
+.contact_div{
+  border: 3px solid #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact_div > i{
+  background: #fff;
+  font-size: 22pt;
+  color: darkgoldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #fff;
+  width: 60px;
+}
+.contact_div > span{
+  color: #fff;
+  margin-left: 15px;
+  font-size: 16pt;
+  display: inline-block;
 }
