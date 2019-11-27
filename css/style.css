@@ -156,6 +156,7 @@ Main Components
 }
 .cd-fixed-background.img-3 {
   background: linear-gradient( 90deg, rgb(154,0,255) 0%, rgb(247,0,255) 100%);
+  background-size: 100% auto;
 }
 .cd-fixed-background.img-3 .cd-content::after {
   background: url("../img/img-mobile-3.png") no-repeat;
