@@ -76,7 +76,7 @@ Main Components
 .cd-header > div{
   margin-top: 30px;
 }
-.cd-header > div > a{
+.btn{
   color: #fff;
   border: 2px solid #fff;
   font-size: 14pt;
@@ -85,9 +85,15 @@ Main Components
   transition: all .3s;
   display: inline-block;
 }
-.cd-header > div > a:hover{
+.btn:hover{
   background: #fff;
   color: rgba(12,85,185);
+}
+.img-1 .btn:hover{
+  color: #2e51a2;
+}
+.img-2 .btn:hover{
+  color: #db1d3f;
 }
 @media only screen and (min-width: 768px) {
   .cd-header h1 {
@@ -120,13 +126,14 @@ Main Components
 .cd-fixed-background p {
   line-height: 1.6;
 }
-.cd-fixed-background > .cd-content > div{
+.links_btns{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   margin-top: 20px;
 }
-.cd-fixed-background > .cd-content > div > a > img{
+.links_btns > a > img{
   width: 170px;
 }  
 .cd-fixed-background .light-background h2, .cd-fixed-background .light-background p {
@@ -160,6 +167,13 @@ Main Components
 .cd-fixed-background.img-3 .cd-content::after {
   background: url("../img/img-mobile-3.png") no-repeat;
   background-size: 100% auto;
+}
+.cd-fixed-background.img-5 .cd-content::after {
+  background: url("../img/img-mobile-5.jpg") no-repeat;
+  background-size: 100% auto;
+}
+.cd-fixed-background.img-5 {
+  background-color: #161616;
 }
 .cd-fixed-background.img-4 {
   background-color: #db9537;
@@ -206,6 +220,9 @@ Main Components
   }
   .cd-fixed-background.img-4 {
     background-image: url("../img/img-4.jpg");
+  }
+  .cd-fixed-background.img-5 {
+    background-image: url("../img/img-5.jpg");
   }
 }
 @media only screen and (min-width: 1048px) {
@@ -267,6 +284,9 @@ Main Components
   display: none;
 }
 
+.cd-contact{
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
 .contact_div{
   border: 3px solid #fff;
   display: flex;
@@ -275,18 +295,27 @@ Main Components
 }
 .contact_div > i{
   background: #fff;
-  font-size: 22pt;
+  font-size: 18pt;
   color: darkgoldenrod;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0px;
   border-bottom: 1px solid #fff;
-  width: 60px;
+  width: 50px;
 }
 .contact_div > span{
   color: #fff;
   margin-left: 15px;
-  font-size: 16pt;
+  font-size: 12pt;
   display: inline-block;
+}
+@media only screen and (min-width: 768px) {
+  .contact_div > i{
+    font-size: 22pt;
+    width: 60px;
+  }
+  .contact_div > span{
+    font-size: 16pt;
+  }
 }
