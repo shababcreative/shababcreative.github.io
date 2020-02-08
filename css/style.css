@@ -136,6 +136,22 @@ Main Components
 .links_btns > a > img{
   width: 170px;
 }  
+.links_btns > div{
+  margin-top: 20px;
+}
+.links_btns > div > a{
+  color: inherit;
+  padding: 20px;
+  background-color: #fff;
+  color: #e11e25;
+  border-radius: 3px;
+  transition: all .3s;
+  font-weight: bold;
+}
+.links_btns > div > a:hover{
+  background-color: #e11e25;
+  color: #fff;
+}
 .cd-fixed-background .light-background h2, .cd-fixed-background .light-background p {
   color: #0f594d;
 }
