@@ -197,6 +197,16 @@ Main Components
 .cd-fixed-background.img-4 .cd-content::after {
   background-size: 100% auto;
 }
+.cd-fixed-background.img-6 .cd-content::after {
+  background: url("../img/img-mobile-6.jpg") no-repeat;
+  background-size: 100% auto;
+}
+.cd-fixed-background.img-6 {
+  background-color: #d6c296;
+}
+.img-6 h2, .img-6 p{
+  color: #000;
+}
 @media only screen and (min-width: 768px) {
   .cd-fixed-background {
     height: 100%;
