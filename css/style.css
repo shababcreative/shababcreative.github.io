@@ -250,6 +250,9 @@ Main Components
   .cd-fixed-background.img-5 {
     background-image: url("../img/img-5.jpg");
   }
+  .cd-fixed-background.img-6 {
+    background-image: url("../img/img-6.jpg");
+  }
 }
 @media only screen and (min-width: 1048px) {
   .cd-fixed-background {
